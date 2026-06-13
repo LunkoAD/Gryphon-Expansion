@@ -1,9 +1,8 @@
 package net.lunkoashtail.gryphonexpansion;
 
+import net.lunkoashtail.gryphonexpansion.block.ModBlocks;
 import org.slf4j.Logger;
-
 import com.mojang.logging.LogUtils;
-
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.api.distmarker.Dist;
@@ -19,6 +18,9 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import net.lunkoashtail.gryphonexpansion.item.ModCreativeModeTabs;
+import net.lunkoashtail.gryphonexpansion.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(GryphonExpansion.MOD_ID)
@@ -34,6 +36,9 @@ public class GryphonExpansion {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        ModCreativeModeTabs.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModItems.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
@@ -62,7 +67,10 @@ public class GryphonExpansion {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.BLACK_OPAL);
+            event.accept(ModItems.RAW_BLACK_OPAL);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
@@ -73,8 +81,8 @@ public class GryphonExpansion {
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @EventBusSubscriber(modid = GryphonExpansion.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    static class ClientModEvents {
+    @EventBusSubscriber(modid = GryphonExpansion.MOD_ID, value = Dist.CLIENT)
+    static class ClientEvents {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event) {
             // Some client setup code

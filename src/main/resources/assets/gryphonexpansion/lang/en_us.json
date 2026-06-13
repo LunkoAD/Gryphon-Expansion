@@ -1,0 +1,16 @@
+{
+  "item.gryphonexpansion.black_opal": "Black Opal",
+  "item.gryphonexpansion.raw_black_opal": "Raw Black Opal",
+
+  "block.gryphonexpansion.black_opal_block": "Block of Black Opal",
+  "block.gryphonexpansion.raw_black_opal_block": "Raw Black Opal Block",
+
+  "block.gryphonexpansion.black_opal_ore": "Black Opal Ore",
+  "block.gryphonexpansion.black_opal_deepslate_ore": "Black Opal Deepslate Ore",
+  "block.gryphonexpansion.black_opal_end_ore": "Black Opal End Ore",
+  "block.gryphonexpansion.black_opal_nether_ore": "Black Opal Nether Ore",
+
+
+  "itemGroup.gryphonexpansion.black_opal_items_tab": "Black Opal Items",
+  "itemGroup.gryphonexpansion.black_opal_blocks_tab": "Black Opal Blocks"
+}
