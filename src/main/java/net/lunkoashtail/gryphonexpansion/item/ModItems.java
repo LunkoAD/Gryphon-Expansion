@@ -10,8 +10,23 @@ public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(GryphonExpansion.MOD_ID);
 
     public static final DeferredItem<Item> BLACK_OPAL = ITEMS.registerSimpleItem("black_opal");
-    public static final DeferredItem<Item> RAW_BLACK_OPAL =
-            ITEMS.registerItem("raw_black_opal", Item::new, new Item.Properties());
+
+    public static final DeferredItem<Item> AGATE_GEODE =
+            ITEMS.registerItem("agate_geode", Item::new, new Item.Properties());
+    public static final DeferredItem<Item> AMBER =
+            ITEMS.registerItem("amber", Item::new, new Item.Properties());
+    public static final DeferredItem<Item> CINNABAR =
+            ITEMS.registerItem("cinnabar", Item::new, new Item.Properties());
+    public static final DeferredItem<Item> RAW_HORSE_MEAT =
+            ITEMS.registerItem("raw_horse_meat", Item::new, new Item.Properties());
+    public static final DeferredItem<Item> COOKED_HORSE_MEAT =
+            ITEMS.registerItem("cooked_horse_meat", Item::new, new Item.Properties());
+    public static final DeferredItem<Item> GRYPHON_SADDLE =
+            ITEMS.registerItem("gryphon_saddle", Item::new, new Item.Properties());
+    public static final DeferredItem<Item> GRYPHON_FEATHER =
+            ITEMS.registerItem("gryphon_feather", Item::new, new Item.Properties());
+    public static final DeferredItem<Item> GRYPHON_LOGO =
+            ITEMS.registerItem("gryphon_logo", Item::new, new Item.Properties());
 
 
 

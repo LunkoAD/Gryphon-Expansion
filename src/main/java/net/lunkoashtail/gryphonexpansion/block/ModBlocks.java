@@ -18,24 +18,33 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(GryphonExpansion.MOD_ID);
 
-    public static final DeferredBlock<Block> BLACK_OPAL_BLOCK = registerBlock("black_opal_block",
-            () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> RAW_BLACK_OPAL_BLOCK = registerBlock("raw_black_opal_block",
-            () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
 
-    public static final DeferredBlock<Block> BLACK_OPAL_ORE = registerBlock("black_opal_ore",
+    // Ores
+
+
+    public static final DeferredBlock<Block> AGATE_ORE = registerBlock("agate_ore",
+            () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> CINNABAR_ORE = registerBlock("cinnabar_ore",
+            () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> AMBER_ORE = registerBlock("amber_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 5),
                     BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> BLACK_OPAL_DEEPSLATE_ORE = registerBlock("black_opal_deepslate_ore",
+    public static final DeferredBlock<Block> CINNABAR_DEEPSLATE_ORE = registerBlock("cinnabar_deepslate_ore",
             () -> new DropExperienceBlock(UniformInt.of(3, 6),
                     BlockBehaviour.Properties.of().strength(6f).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> BLACK_OPAL_END_ORE = registerBlock("black_opal_end_ore",
+    public static final DeferredBlock<Block> AMBER_DEEPSLATE_ORE = registerBlock("amber_deepslate_ore",
             () -> new DropExperienceBlock(UniformInt.of(3, 8),
                     BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> BLACK_OPAL_NETHER_ORE = registerBlock("black_opal_nether_ore",
+    public static final DeferredBlock<Block> AGATE_DEEPSLATE_ORE = registerBlock("agate_deepslate_ore",
             () -> new DropExperienceBlock(UniformInt.of(1, 7),
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
 
+
+    // Decorative
+
+
+
+    // Functional
 
 
 

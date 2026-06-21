@@ -13,7 +13,13 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        basicItem(ModItems.BLACK_OPAL.get());
-        basicItem(ModItems.RAW_BLACK_OPAL.get());
+        basicItem(ModItems.AMBER.get());
+        basicItem(ModItems.AGATE_GEODE.get());
+        basicItem(ModItems.CINNABAR.get());
+        basicItem(ModItems.COOKED_HORSE_MEAT.get());
+        basicItem(ModItems.RAW_HORSE_MEAT.get());
+        basicItem(ModItems.GRYPHON_SADDLE.get());
+        basicItem(ModItems.GRYPHON_FEATHER.get());
+        basicItem(ModItems.GRYPHON_LOGO.get());
     }
 }

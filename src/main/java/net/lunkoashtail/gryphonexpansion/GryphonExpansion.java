@@ -68,8 +68,25 @@ public class GryphonExpansion {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.BLACK_OPAL);
-            event.accept(ModItems.RAW_BLACK_OPAL);
+            event.accept(ModItems.GRYPHON_FEATHER);
+            event.accept(ModItems.AMBER);
+            event.accept(ModItems.AGATE_GEODE);
+            event.accept(ModItems.CINNABAR);
+        }
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.COOKED_HORSE_MEAT);
+            event.accept(ModItems.RAW_HORSE_MEAT);
+        }
+        if(event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.GRYPHON_SADDLE);
+        }
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.AGATE_ORE);
+            event.accept(ModBlocks.AGATE_DEEPSLATE_ORE);
+            event.accept(ModBlocks.AMBER_ORE);
+            event.accept(ModBlocks.AMBER_DEEPSLATE_ORE);
+            event.accept(ModBlocks.CINNABAR_ORE);
+            event.accept(ModBlocks.CINNABAR_DEEPSLATE_ORE);
         }
     }
 

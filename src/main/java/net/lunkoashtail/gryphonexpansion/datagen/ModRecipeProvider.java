@@ -20,23 +20,28 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(RecipeOutput pRecipeOutput) {
-        List<ItemLike> BLACK_OPAL_SMELTABLES = List.of(ModItems.RAW_BLACK_OPAL,
-                ModBlocks.BLACK_OPAL_ORE, ModBlocks.BLACK_OPAL_DEEPSLATE_ORE, ModBlocks.BLACK_OPAL_END_ORE, ModBlocks.BLACK_OPAL_NETHER_ORE);
+        List<ItemLike> AGATE_SMELTABLES = List.of(ModItems.AGATE_GEODE,
+                ModBlocks.AGATE_ORE, ModBlocks.AGATE_DEEPSLATE_ORE);
+        List<ItemLike> AMBER_SMELTABLES = List.of(ModItems.AMBER,
+                ModBlocks.AMBER_ORE, ModBlocks.AMBER_DEEPSLATE_ORE);
+        List<ItemLike> CINNABAR_SMELTABLES = List.of(ModItems.CINNABAR,
+                ModBlocks.CINNABAR_ORE, ModBlocks.CINNABAR_DEEPSLATE_ORE);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BLACK_OPAL_BLOCK.get())
-                .pattern("BBB")
-                .pattern("BBB")
-                .pattern("BBB")
-                .define('B', ModItems.BLACK_OPAL.get())
-                .unlockedBy("has_block_opal", has(ModItems.BLACK_OPAL.get())).save(pRecipeOutput);
+        //ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BLACK_OPAL_BLOCK.get())
+        //        .pattern("BBB")
+        //        .pattern("BBB")
+        //        .pattern("BBB")
+        //        .define('B', ModItems.BLACK_OPAL.get())
+        //        .unlockedBy("has_block_opal", has(ModItems.BLACK_OPAL.get())).save(pRecipeOutput);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BLACK_OPAL.get(), 9)
-                .requires(ModBlocks.BLACK_OPAL_BLOCK.get())
-                .unlockedBy("has_black_opal_block", has(ModBlocks.BLACK_OPAL_BLOCK.get())).save(pRecipeOutput);
+        //ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BLACK_OPAL.get(), 9)
+        //        .requires(ModBlocks.BLACK_OPAL_BLOCK.get())
+        //        .unlockedBy("has_black_opal_block", has(ModBlocks.BLACK_OPAL_BLOCK.get())).save(pRecipeOutput);
 
 
-        oreSmelting(pRecipeOutput, BLACK_OPAL_SMELTABLES, RecipeCategory.MISC, ModItems.BLACK_OPAL.get(), 0.25f, 200, "black_opal");
-        oreBlasting(pRecipeOutput, BLACK_OPAL_SMELTABLES, RecipeCategory.MISC, ModItems.BLACK_OPAL.get(), 0.25f, 100, "black_opal");
+        oreSmelting(pRecipeOutput, AMBER_SMELTABLES, RecipeCategory.MISC, ModItems.AMBER.get(), 0.25f, 200, "amber");
+        oreBlasting(pRecipeOutput, AGATE_SMELTABLES, RecipeCategory.MISC, ModItems.AGATE_GEODE.get(), 0.25f, 100, "agate_geode");
+        oreBlasting(pRecipeOutput, CINNABAR_SMELTABLES, RecipeCategory.MISC, ModItems.CINNABAR.get(), 0.25f, 100, "cinnabar");
     }
 
     protected static void oreSmelting(RecipeOutput pRecipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,

@@ -26,17 +26,21 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        dropSelf(ModBlocks.BLACK_OPAL_BLOCK.get());
-        dropSelf(ModBlocks.RAW_BLACK_OPAL_BLOCK.get());
+        //dropSelf(ModBlocks.BLACK_OPAL_BLOCK.get());
+        //dropSelf(ModBlocks.RAW_BLACK_OPAL_BLOCK.get());
 
-        this.add(ModBlocks.BLACK_OPAL_ORE.get(),
-                block -> createOreDrop(ModBlocks.BLACK_OPAL_ORE.get(), ModItems.RAW_BLACK_OPAL.get()));
-        this.add(ModBlocks.BLACK_OPAL_DEEPSLATE_ORE.get(),
-                block -> createMultipleOreDrops(ModBlocks.BLACK_OPAL_DEEPSLATE_ORE.get(), ModItems.RAW_BLACK_OPAL.get(), 2, 5));
-        this.add(ModBlocks.BLACK_OPAL_END_ORE.get(),
-                block -> createMultipleOreDrops(ModBlocks.BLACK_OPAL_END_ORE.get(), ModItems.RAW_BLACK_OPAL.get(), 4, 7));
-        this.add(ModBlocks.BLACK_OPAL_NETHER_ORE.get(),
-                block -> createMultipleOreDrops(ModBlocks.BLACK_OPAL_NETHER_ORE.get(), ModItems.RAW_BLACK_OPAL.get(), 3, 9));
+        this.add(ModBlocks.AMBER_ORE.get(),
+                block -> createOreDrop(ModBlocks.AMBER_ORE.get(), ModItems.AMBER.get()));
+        this.add(ModBlocks.AMBER_DEEPSLATE_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.AMBER_DEEPSLATE_ORE.get(), ModItems.AMBER.get(), 1, 2));
+        this.add(ModBlocks.CINNABAR_ORE.get(),
+                block -> createOreDrop(ModBlocks.CINNABAR_ORE.get(), ModItems.CINNABAR.get()));
+        this.add(ModBlocks.CINNABAR_DEEPSLATE_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.CINNABAR_DEEPSLATE_ORE.get(), ModItems.CINNABAR.get(), 1, 2));
+        this.add(ModBlocks.AGATE_ORE.get(),
+                block -> createOreDrop(ModBlocks.AGATE_ORE.get(), ModItems.AGATE_GEODE.get()));
+        this.add(ModBlocks.AGATE_DEEPSLATE_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.AGATE_DEEPSLATE_ORE.get(), ModItems.AGATE_GEODE.get(), 1, 2));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

@@ -19,8 +19,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.BLACK_OPAL_BLOCK.get())
-                .add(ModBlocks.RAW_BLACK_OPAL_BLOCK.get())
+                .add(ModBlocks.AGATE_DEEPSLATE_ORE.get())
+                .add(ModBlocks.AGATE_ORE.get())
+                .add(ModBlocks.AMBER_ORE.get())
+                .add(ModBlocks.AMBER_DEEPSLATE_ORE.get())
+                .add(ModBlocks.CINNABAR_ORE.get())
+                .add(ModBlocks.CINNABAR_DEEPSLATE_ORE.get())
 ;
 
         this.tag(BlockTags.NEEDS_IRON_TOOL);

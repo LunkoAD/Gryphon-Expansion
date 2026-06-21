@@ -1,16 +1,21 @@
 {
-  "item.gryphonexpansion.black_opal": "Black Opal",
-  "item.gryphonexpansion.raw_black_opal": "Raw Black Opal",
+  "item.gryphonexpansion.amber": "Amber",
+  "item.gryphonexpansion.agate_geode": "Agate Geode",
+  "item.gryphonexpansion.cinnabar": "Cinnabar",
+  "item.gryphonexpansion.gryphon_saddle": "Gryphon Saddle",
+  "item.gryphonexpansion.gryphon_feather": "Gryphon Feather",
+  "item.gryphonexpansion.gryphon_logo": "Gryphon Logo",
 
   "block.gryphonexpansion.black_opal_block": "Block of Black Opal",
   "block.gryphonexpansion.raw_black_opal_block": "Raw Black Opal Block",
 
-  "block.gryphonexpansion.black_opal_ore": "Black Opal Ore",
-  "block.gryphonexpansion.black_opal_deepslate_ore": "Black Opal Deepslate Ore",
-  "block.gryphonexpansion.black_opal_end_ore": "Black Opal End Ore",
-  "block.gryphonexpansion.black_opal_nether_ore": "Black Opal Nether Ore",
+  "block.gryphonexpansion.agate_ore": "Agate Ore",
+  "block.gryphonexpansion.agate_deepslate_ore": "Agate Deepslate Ore",
+  "block.gryphonexpansion.cinnabar_ore": "Cinnabar Ore",
+  "block.gryphonexpansion.cinnabar_deepslate_ore": "Cinnabar Deepslate Ore",
+  "block.gryphonexpansion.amber_ore": "Amber Ore",
+  "block.gryphonexpansion.amber_deepslate_ore": "Amber Deepslate Ore",
 
 
-  "itemGroup.gryphonexpansion.black_opal_items_tab": "Black Opal Items",
-  "itemGroup.gryphonexpansion.black_opal_blocks_tab": "Black Opal Blocks"
+  "itemGroup.gryphonexpansion.gryphon_expansion_items_tab": "Gryphon Expansion"
 }

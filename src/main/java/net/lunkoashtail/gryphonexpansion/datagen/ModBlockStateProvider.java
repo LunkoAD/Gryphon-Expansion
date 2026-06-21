@@ -15,13 +15,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(ModBlocks.BLACK_OPAL_BLOCK);
-        blockWithItem(ModBlocks.RAW_BLACK_OPAL_BLOCK);
-
-        blockWithItem(ModBlocks.BLACK_OPAL_ORE);
-        blockWithItem(ModBlocks.BLACK_OPAL_DEEPSLATE_ORE );
-        blockWithItem(ModBlocks.BLACK_OPAL_END_ORE);
-        blockWithItem(ModBlocks.BLACK_OPAL_NETHER_ORE);
+        blockWithItem(ModBlocks.AGATE_ORE);
+        blockWithItem(ModBlocks.AGATE_DEEPSLATE_ORE);
+        blockWithItem(ModBlocks.AMBER_ORE);
+        blockWithItem(ModBlocks.AMBER_DEEPSLATE_ORE );
+        blockWithItem(ModBlocks.CINNABAR_ORE);
+        blockWithItem(ModBlocks.CINNABAR_DEEPSLATE_ORE);
 
 
     }
