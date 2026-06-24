@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "agate_geode",
+  "ingredient": {
+    "item": "gryphonexpansion:agate_geode"
+  },
+  "result": {
+    "count": 1,
+    "id": "gryphonexpansion:agate_geode"
+  }
+}

@@ -21,6 +21,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.AMBER_DEEPSLATE_ORE );
         blockWithItem(ModBlocks.CINNABAR_ORE);
         blockWithItem(ModBlocks.CINNABAR_DEEPSLATE_ORE);
+        blockWithItem(ModBlocks.BARLEY_STRAW_BALE);
 
 
     }

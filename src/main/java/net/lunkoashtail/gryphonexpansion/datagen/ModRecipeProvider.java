@@ -27,16 +27,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> CINNABAR_SMELTABLES = List.of(ModItems.CINNABAR,
                 ModBlocks.CINNABAR_ORE, ModBlocks.CINNABAR_DEEPSLATE_ORE);
 
-        //ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BLACK_OPAL_BLOCK.get())
-        //        .pattern("BBB")
-        //        .pattern("BBB")
-        //        .pattern("BBB")
-        //        .define('B', ModItems.BLACK_OPAL.get())
-        //        .unlockedBy("has_block_opal", has(ModItems.BLACK_OPAL.get())).save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModBlocks.BARLEY_STRAW_BALE.get())
+                .pattern("BBB")
+                .pattern("BBB")
+                .pattern("BBB")
+                .define('B', ModItems.BARLEY.get())
+                .unlockedBy("has_barley_straw_bale", has(ModItems.BARLEY.get())).save(pRecipeOutput);
 
-        //ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BLACK_OPAL.get(), 9)
-        //        .requires(ModBlocks.BLACK_OPAL_BLOCK.get())
-        //        .unlockedBy("has_black_opal_block", has(ModBlocks.BLACK_OPAL_BLOCK.get())).save(pRecipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.BARLEY.get(), 9)
+                .requires(ModBlocks.BARLEY_STRAW_BALE.get())
+                .unlockedBy("has_barley_straw_bale", has(ModBlocks.BARLEY_STRAW_BALE.get())).save(pRecipeOutput);
 
 
         oreSmelting(pRecipeOutput, AMBER_SMELTABLES, RecipeCategory.MISC, ModItems.AMBER.get(), 0.25f, 200, "amber");

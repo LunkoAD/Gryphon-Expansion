@@ -26,8 +26,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        //dropSelf(ModBlocks.BLACK_OPAL_BLOCK.get());
-        //dropSelf(ModBlocks.RAW_BLACK_OPAL_BLOCK.get());
+        dropSelf(ModBlocks.BARLEY_STRAW_BALE.get());
 
         this.add(ModBlocks.AMBER_ORE.get(),
                 block -> createOreDrop(ModBlocks.AMBER_ORE.get(), ModItems.AMBER.get()));

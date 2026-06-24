@@ -39,6 +39,10 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(1, 7),
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<Block> BARLEY_STRAW_BALE = registerBlock("barley_straw_bale",
+            () -> new DropExperienceBlock(UniformInt.of(1, 7),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
 
     // Decorative
 

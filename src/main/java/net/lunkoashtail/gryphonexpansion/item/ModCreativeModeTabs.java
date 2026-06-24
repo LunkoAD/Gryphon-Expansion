@@ -22,19 +22,47 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("itemGroup.gryphonexpansion.gryphon_expansion_items_tab"))
                     .icon(() -> new ItemStack(ModItems.GRYPHON_LOGO.get()))
                     .displayItems((pParameters, pOutput) -> {
+                        // ── Gryphon gear ─────────────────────────────────────────
+                        pOutput.accept(ModItems.GRYPHON_LOGO);
                         pOutput.accept(ModItems.GRYPHON_SADDLE);
+                        pOutput.accept(ModItems.IRON_GRYPHON_ARMOR);
+                        pOutput.accept(ModItems.GOLD_GRYPHON_ARMOR);
+                        pOutput.accept(ModItems.DIAMOND_GRYPHON_ARMOR);
+                        pOutput.accept(ModItems.NETHERITE_GRYPHON_ARMOR);
+                        pOutput.accept(ModItems.GRYPHON_HARNESS);
+                        pOutput.accept(ModItems.GRYPHON_SADDLEBAG);
+                        // ── Gryphon drops & consumables ───────────────────────────
+                        pOutput.accept(ModItems.GRYPHON_FEATHER);
+                        pOutput.accept(ModItems.GRYPHON_MILK_BUCKET);
+                        pOutput.accept(ModItems.GRIFFIN_HEART);
                         pOutput.accept(ModItems.COOKED_HORSE_MEAT);
                         pOutput.accept(ModItems.RAW_HORSE_MEAT);
-                        pOutput.accept(ModItems.GRYPHON_FEATHER);
-
-
-                        pOutput.accept(ModBlocks.AGATE_ORE);
-                        pOutput.accept(ModBlocks.AGATE_DEEPSLATE_ORE);
+                        pOutput.accept(ModItems.BARLEY);
+                        pOutput.accept(ModItems.BARLEY_SEEDS);
+                        // ── Crafting materials ────────────────────────────────────
+                        pOutput.accept(ModItems.CONDITIONED_FLOCKING);
+                        pOutput.accept(ModItems.FEATHER_STUFFING_PANEL);
+                        pOutput.accept(ModItems.FLOCKED_WOOL_PANEL);
+                        pOutput.accept(ModItems.FISH_OIL);
+                        pOutput.accept(ModItems.SMOKED_LEATHER);
+                        pOutput.accept(ModItems.TREATED_LEATHER);
+                        pOutput.accept(ModItems.STIRRUP_HARDWARE);
+                        pOutput.accept(ModItems.RIVET);
+                        pOutput.accept(ModItems.AETHERIC_CRYSTAL);
+                        pOutput.accept(ModItems.STORM_ESSENCE);
+                        pOutput.accept(ModItems.WIND_ESSENCE);
+                        // ── Gems & raw materials ──────────────────────────────────
+                        pOutput.accept(ModItems.AMBER);
+                        pOutput.accept(ModItems.AGATE_GEODE);
+                        pOutput.accept(ModItems.CINNABAR);
+                        // ── Blocks ────────────────────────────────────────────────
                         pOutput.accept(ModBlocks.AMBER_ORE);
                         pOutput.accept(ModBlocks.AMBER_DEEPSLATE_ORE);
+                        pOutput.accept(ModBlocks.AGATE_ORE);
+                        pOutput.accept(ModBlocks.AGATE_DEEPSLATE_ORE);
                         pOutput.accept(ModBlocks.CINNABAR_ORE);
                         pOutput.accept(ModBlocks.CINNABAR_DEEPSLATE_ORE);
-
+                        pOutput.accept(ModBlocks.BARLEY_STRAW_BALE);
                     }).build());
 
     //public static final Supplier<CreativeModeTab> BLACK_OPAL_BLOCKS_TAB =
