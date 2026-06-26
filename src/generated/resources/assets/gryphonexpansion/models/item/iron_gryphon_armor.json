@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "gryphonexpansion:item/iron_gryphon_armor"
+  }
+}

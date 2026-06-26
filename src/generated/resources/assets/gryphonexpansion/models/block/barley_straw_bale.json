@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "gryphonexpansion:block/barley_straw_bale"
+  }
+}
